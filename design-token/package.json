@@ -1,0 +1,25 @@
+{
+  "name": "design-token",
+  "version": "0.0.3",
+  "description": "This is a POC for design system implementation",
+  "main": "src/index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bernardoaires/design-system"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node src/index.js",
+    "build:dev": "rm -rf dist && node src/index.js"
+  },
+  "dependencies": {
+    "typescript": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "style-dictionary": "^3.0.3"
+  }
+}
