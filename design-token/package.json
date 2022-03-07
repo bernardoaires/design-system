@@ -12,8 +12,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "node src/index.js",
-    "build:dev": "rm -rf dist && node src/index.js"
+    "build": "ts-node src/index.ts",
+    "build:dev": "rm -rf dist && ts-node src/index.ts"
   },
   "dependencies": {
     "typescript": "^4.5.5"
