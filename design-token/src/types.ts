@@ -7,8 +7,12 @@ export interface Brand {
   mode: string
 }
 
-export interface BuildPath {
-  css: string
+export enum StyleOptions {
+  CSS = 'css',
+  SCSS = 'scss'
+}
+export type BuildPath = {
+  [K in StyleOptions]: string | undefined
 }
 
 export interface BuildConfig {
