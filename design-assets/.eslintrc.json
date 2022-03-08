@@ -1,0 +1,32 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+      "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+      "no-console": "warn",
+      "object-shorthand": "error",
+      "quote-props": ["error", "as-needed"],
+      "indent": ["error", 2, { "flatTernaryExpressions": true }],
+      "prefer-const": ["error"],
+      "react/prop-types": 0,
+      "semi": ["error", "never"],
+      "jsx-quotes": ["error", "prefer-single"],
+      "object-curly-spacing": ["error", "always"],
+      "array-bracket-spacing": ["error", "never"],
+      "no-undef": "off"
+    }
+}
